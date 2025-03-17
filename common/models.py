@@ -5,6 +5,12 @@ from ckeditor.fields import RichTextField
 class Banner(models.Model):
     image = models.ImageField(upload_to='banner', verbose_name='баннер', null=True, blank=True)
     link = models.TextField('Ссылка', null=True, blank=True)
+    order = models.PositiveIntegerField('Порядок', default=1)
+
+    class Meta:
+        verbose_name = "Баннеры"
+        verbose_name_plural = verbose_name
+        ordering = ('order', )
 
 
 class Footer(models.Model):
