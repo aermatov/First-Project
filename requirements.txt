@@ -1,0 +1,8 @@
+asgiref==3.8.1
+Django==5.1.7
+Pillow==11.1.0
+django-admin-sortable2==2.2.4
+django_ckeditor==6.7.2
+#django_js_asset-3.1.2
+sqlparse==0.5.3
+typing_extensions==4.12.2
