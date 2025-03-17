@@ -4,6 +4,7 @@ from ckeditor.fields import RichTextField
 
 class Banner(models.Model):
     image = models.ImageField(upload_to='banner', verbose_name='баннер', null=True, blank=True)
+    link = models.TextField('Ссылка', null=True, blank=True)
 
 
 class Footer(models.Model):
