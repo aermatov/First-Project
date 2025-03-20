@@ -1,3 +1,4 @@
-from django.shortcuts import render
+from select import select
 
-# Create your views here.
+def get_category():
+    pass
